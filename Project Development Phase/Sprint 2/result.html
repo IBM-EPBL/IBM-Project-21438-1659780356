@@ -1,0 +1,55 @@
+<!--
+
+                            Online HTML Compiler.
+                Code, Compile, Run and Debug HTML program online.
+Write your code in this editor and press "Run" button to execute it.
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body style="background:#419E94; " onload="onloadfunction()">
+    <div style="background-Color:#F37355;">
+    <div style="text-align:right;color:blue;font-Size:100%;padding-bottom:0px;margin-bottom:0px;background-Color:#F37355;border-color:#F7ACFA;">
+        <a href ="C:/Users/Lenovo/index.html" style="text-align:Left;color:blue;font-Size:100%;background-Color:#CBE0E3"><strong>Home</strong></a>
+       <a href ="C:/Users/Lenovo/indexnew.html" style="text-align:Left;color:blue;font-Size:100%;background-Color:#CBE0E3"><strong>Return</strong></a>
+  
+   </div>
+    <div style="text-align:center;color:blue;font-Size:200%;padding-top:0px;margin-top:0px;background-Color:#F37355;font-family:Snell Roundhand, cursive">
+        <h1 style="text-align:center;color:white;font-Size:100%"><strong>Chronic Kidney Disease</strong></h1>
+    </div>
+    </div>
+    <div style ="text-align:center">
+        <h1 id="text1"></h1>
+    </div>
+    <div style="text-align:center">
+        <img id="Image1" src="D:/CKD/Image/Failed.jpg" alt="Prediction" width="500" height="600" >
+    </div>
+ 
+    <br></br>
+    <script>
+        function onloadfunction(){
+            // Selecting the input element and get its value 
+            var inputVal = localStorage.getItem("Value1");
+            if(inputVal == 8)
+            {
+                document.getElementById('text1').innerHTML = "Prediction: You have Chronic Kidney Disease";
+		document.getElementById('Image1').src = "D:/CKD/Image/Failed.jpg";
+            }
+            else
+            {
+                document.getElementById('text1').innerHTML = "Prediction: You Don't have Chronic Kidney Disease";
+                document.getElementById('Image1').src = "D:/CKD/Image/Happy.png";
+            }
+            // Displaying the value
+            //alert(inputVal);
+        }
+
+    </script>
+</body>
+
+</html>

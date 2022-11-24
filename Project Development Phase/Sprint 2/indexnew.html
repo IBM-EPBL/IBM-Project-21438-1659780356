@@ -1,0 +1,118 @@
+<!--
+
+                            Online HTML Compiler.
+                Code, Compile, Run and Debug HTML program online.
+Write your code in this editor and press "Run" button to execute it.
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body style="background:#419E94; ">
+    <div style="background-Color:#B92F2D;">
+    <div style="text-align:right;color:blue;font-Size:100%;padding-bottom:0px;margin-bottom:0px;background-Color:#B92F2D;border-color:#B92F2D;">
+        <a href ="C:/Users/Lenovo/index.html" style="text-align:Left;color:green;font-Size:100%;background-Color:#CBE0E3"><strong>Home</strong></a>
+    </div>
+    <div style="text-align:center;color:blue;font-Size:200%;padding-top:0px;margin-top:0px;background-Color:#B92F2D;font-family:Snell Roundhand, cursive">
+        <h1 style="text-align:center;color:white;font-Size:100%"><strong>Chronic Kidney Disease</strong></h1>
+    </div>
+    </div>
+    <br></br>
+    <fieldset  style ="background-image: url('D:/CKD/Image/Home.jpg');background-position: center; background-repeat: no-repeat;"><legend  ><b>Prediction Analysis</b></legend>
+    <div style="text-align:center; Vertical-align:center;Horizontal-align:center;">
+<label for="Enter Your blood_urea">Enter Your blood_urea:</label>
+    <input type="text" id="PRED1" name="fname" > 
+    </div>
+    <span style="margin-bottom: 0.4em;display:block"></span>
+        <div style="text-align:center;Vertical-align:center;Horizontal-align:center;">
+<label for="Enter Your blood_glucose_random">Enter Your blood_glucose_random:</label>
+        <input type="text" id="PRED2" name="fname" > 
+    </div>
+    <span style="margin-bottom: 0.2em;display:block"></span>
+        <div style="text-align:center;Vertical-align:center;Horizontal-align:center;">
+<label for="Select aanemia or not">Select aanemia or not:</label>
+    <select name="cars" id="PRED3">
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+    </select>
+    </div>
+ <span style="margin-bottom: 0.2em;display:block"></span>
+        <div style="text-align:center;Vertical-align:center;Horizontal-align:center;">
+<label for="Select coronary_artery_disease or not">Select coronary_artery_disease or not:</label>
+ <select name="cars" id="PRED4">
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+    </select>
+    </div>
+    <span style="margin-bottom: 0.2em;display:block"></span>
+        <div style="text-align:center;Vertical-align:center;Horizontal-align:center;">
+      <label for="Select pus_cell or not">Select pus_cell or not:</label>
+ <select name="cars" id="PRED5">
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+    </select>
+    </div>
+    <span style="margin-bottom: 0.2em;display:block"></span>
+        <div style="text-align:center;Vertical-align:center;Horizontal-align:center;">
+         <label for="Select red_blood_cells or not">Select red_blood_cells or not:</label>
+ <select name="cars" id="PRED6">
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+    </select>
+    </div>
+  
+        <span style="margin-bottom: 0.2em;display:block"></span>
+        <div style="text-align:center;Vertical-align:center;Horizontal-align:center;>
+         <label for="Select diabetes_mellitus or not">Select diabetes_mellitus or not:</label>
+ <select name="cars" id="PRED7">
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+    </select>
+  
+    </div>
+        <span style="margin-bottom: 0.2em;display:block"></span>
+        <div style="text-align:center;Vertical-align:center;Horizontal-align:center;">
+          <label for="Select peda_edema or not">Select peda_edema or not:</label>
+ <select name="cars" id="PRED8">
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+    </select>
+    </div>
+        <span style="margin-bottom: 0.2em;display:block"></span>
+        <div style="text-align:center;Vertical-align:center;Horizontal-align:center;">
+        <button id="btn1" style="width:300px;font-Size:100%;height:30px" onclick="getInputValue();"><b>Result </b></button>
+    </div>
+    </fieldset>
+    <script>
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal =  parseInt(document.getElementById("PRED1").value)
+                                                        +
+                            parseInt(document.getElementById("PRED2").value)
+                                                        +
+                            parseInt(document.getElementById("PRED3").value)
+                                                        +
+                            parseInt(document.getElementById("PRED4").value)
+                                                        +
+                            parseInt(document.getElementById("PRED5").value)
+                                                        +
+                            parseInt(document.getElementById("PRED6").value)
+                                                        +
+                            parseInt(document.getElementById("PRED7").value)
+                                                        +
+                            parseInt(document.getElementById("PRED8").value);
+            
+            localStorage.setItem("Value1",inputVal);
+            window.location.href="C:/Users/Lenovo/result.html";
+            // Displaying the value
+            //alert(inputVal);
+        }
+
+    </script>
+</body>
+
+</html>
